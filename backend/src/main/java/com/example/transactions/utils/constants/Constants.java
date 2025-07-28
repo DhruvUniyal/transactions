@@ -8,4 +8,6 @@ public class Constants {
     public static final String SUCCESS_MESSAGE = "";
     public static final String ERROR_MESSAGE = "";
 
+    public static final String EMPTY_RESULT_RETURNED = "Query returned empty list";
+
 }
