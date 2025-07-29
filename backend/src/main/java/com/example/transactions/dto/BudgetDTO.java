@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Getter @Setter @NoArgsConstructor
-public class UpdateBudgetDTO {
+public class BudgetDTO {
 
     private long budget_id;
 

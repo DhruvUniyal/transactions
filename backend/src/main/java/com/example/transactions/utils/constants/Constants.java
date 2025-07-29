@@ -10,4 +10,5 @@ public class Constants {
 
     public static final String EMPTY_RESULT_RETURNED = "Query returned empty list";
 
+    public static final String ERROR_RETURNING_DATA =  "Error while returning data";
 }

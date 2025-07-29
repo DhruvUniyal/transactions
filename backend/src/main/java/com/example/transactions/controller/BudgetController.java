@@ -1,6 +1,6 @@
 package com.example.transactions.controller;
 
-import com.example.transactions.dto.UpdateBudgetDTO;
+import com.example.transactions.dto.BudgetDTO;
 import com.example.transactions.model.Budgets;
 import com.example.transactions.response.Response;
 import com.example.transactions.serviceImpl.BudgetServiceImpl;
@@ -24,7 +24,7 @@ public class BudgetController {
     }
 
     @PutMapping("/updateBudget")
-    public Response<Budgets> updateBudget(@RequestParam long id ,@RequestBody UpdateBudgetDTO budget){
+    public Response<Budgets> updateBudget(@RequestParam long id ,@RequestBody BudgetDTO budget){
         return budgets.updateBudget(id,budget);
     }
 

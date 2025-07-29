@@ -1,6 +1,6 @@
 package com.example.transactions.utils;
 
-import com.example.transactions.dto.UpdateBudgetDTO;
+import com.example.transactions.dto.BudgetDTO;
 
 import com.example.transactions.model.Budgets;
 import org.mapstruct.BeanMapping;
@@ -11,9 +11,9 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 @Mapper(componentModel = "spring")
 public interface BudgetMapper {
 
-        UpdateBudgetDTO toDto(Budgets entity);
-        Budgets toEntity(UpdateBudgetDTO dto);
+        BudgetDTO toDto(Budgets entity);
+        Budgets toEntity(BudgetDTO dto);
 
         @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-        void updateEntityFromDto(UpdateBudgetDTO toDto, @MappingTarget Budgets budget);
+        void updateEntityFromDto(BudgetDTO toDto, @MappingTarget Budgets budget);
 }
